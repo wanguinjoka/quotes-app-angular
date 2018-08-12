@@ -5,11 +5,14 @@
   </div>
 </div>
 <ul>
-<div class="container" id="quoteDisplay">
-      <div class="row" *ngFor='let quote of quotes; let i= index'>
-        <div>
-        <h4 id="{{i}}" appHighlight>{{quote.message}} Created on {{quote.entryDate|date:'medium'}}</h4>
-      </div>
+<div class="card text-center" id="quoteDisplay">
+  <div class="card-header">
+    Pinned Quotes
+  </div>
+  <div class ="card-body" *ngFor='let quote of quotes; let i= index'>
+        <h4 id="{{i}}" appHighlight>{{quote.message}}</h4>
+        <p> Created on {{quote.entryDate|date:'medium'}}</p>
+
           <div id="detailsBtn">
             <button class="btn btn-primary" (click)='toogleDetails(i)'>Show Author</button>
           </div>
