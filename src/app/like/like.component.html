@@ -1,10 +1,10 @@
 <div class="but">
       <div class="like-button">
-        <button class="btn btn-outline-success" type="button" name="button" (click)='likeButtonClick()'><i class="glyphicon glyphicon-thumbs-up"></i></button>
+        <button class="btn btn-outline-success" type="button" name="likeButton" (click)='likeButtonClick()'><i class="glyphicon glyphicon-thumbs-up"></i></button>
           <span>{{numberOfLikes}}</span>
       </div>
-          <div class="like-button">
-          <button class="btn btn-outline-success" type="button" name="button" (click)='likeButtonClick()'><i class="glyphicon glyphicon-thumbs-down"></i></button>
-              <span>{{numberOfLikes}}</span>
+          <div class="dislike-button">
+          <button class="btn btn-outline-success" type="button" name="dislikeButton" (click)='disLikeButtonClick()'><i class="glyphicon glyphicon-thumbs-down"></i></button>
+              <span>{{numberOfDislikes}}</span>
       </div>
 </div>

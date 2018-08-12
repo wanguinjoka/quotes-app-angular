@@ -11,6 +11,12 @@ export class LikeComponent implements OnInit {
   likeButtonClick(){
     this.numberOfLikes++;
   }
+
+  numberOfDislikes: number=0;
+
+  disLikeButtonClick(){
+    this.numberOfDislikes++;
+  }
   constructor() { }
 
   ngOnInit() {
