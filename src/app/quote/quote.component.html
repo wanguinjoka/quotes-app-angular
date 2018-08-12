@@ -16,6 +16,7 @@
           <div id="detailsBtn">
             <button class="btn btn-primary" (click)='toogleDetails(i)'>Show Author</button>
           </div>
+          <div><app-like></app-like></div>
           <div class ="row" *ngIf="quote.showDetails">
               <app-quote-details  [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
           </div>
