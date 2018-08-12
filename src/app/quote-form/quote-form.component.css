@@ -1,20 +1,12 @@
-#bodyForm{
-  text-align: center;
-  background-color: #f5c3c2;
-  padding: 20,20;
-  width: 470%;
-  font-size: 50;
-}
 #message{
-  width: 450%;
-  margin-left: 10%;
+  width: 250%;
 }
 #details{
-  width: 450%;
-  margin-left: 10%;
+  width: 250%;
 }
+
 #pinup{
   border-radius: 50%;
-  background-color: purple;
+  background-color: red;
   border: purple;
 }

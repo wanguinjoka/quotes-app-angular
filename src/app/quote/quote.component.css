@@ -1,11 +1,22 @@
-#quoteDisplay{
+#formDisplay{
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #e4e4e4;
   margin-top: 10px;
-  width: 100%;
+  font-style: italic;
+  font-family:fantasy;
+
+}
+
+#quoteDisplay{
+  background-color: #fffe00;
+  margin-top: 10px;
   font-style: italic;
   font-family:fantasy;
 }
 #detailsBtn{
-
+  background-color: #39ff14;
+  border-radius: 50%;
+}
+#header{
+  text-align: center;
 }

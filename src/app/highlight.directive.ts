@@ -8,7 +8,7 @@ export class HighlightDirective {
   constructor(private elem:ElementRef) {}
 
   @HostListener("click") onClicks(){
-   this.textDeco("yellow")
+   this.textDeco("white")
  }
 
  @HostListener("dblclick") onDoubleClicks(){

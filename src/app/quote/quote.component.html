@@ -1,25 +1,28 @@
-<h2>Quotes</h2>
-<div class="container" id="bodyForm">
-  <div class="row">
+
+<div class="card-deck">
+  <div class="card" id="formDisplay">
+  <div class="card-header">
+    <h2>Quotes</h2>
+  </div>
+  <div class="card-body">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
 </div>
-<ul>
-<div class="card text-center" id="quoteDisplay">
-  <div class="card-header">
-    Pinned Quotes
+<div class="card" id="quoteDisplay">
+  <div class="card-header" id="header">
+    <h2>Pinned Quotes</h2>
   </div>
   <div class ="card-body" *ngFor='let quote of quotes; let i= index'>
         <h4 id="{{i}}" appHighlight>{{quote.message}}</h4>
         <p> Created on {{quote.entryDate|date:'medium'}}</p>
 
-          <div id="detailsBtn">
-            <button class="btn btn-primary" (click)='toogleDetails(i)'>Show Author</button>
-          </div>
+
+            <button class="btn btn-primary" id="detailsBtn"(click)='toogleDetails(i)'>Show Author</button>
+
           <div><app-like></app-like></div>
           <div class ="row" *ngIf="quote.showDetails">
               <app-quote-details  [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
           </div>
     </div>
   </div>
-</ul>
+</div>
